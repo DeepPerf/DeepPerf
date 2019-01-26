@@ -139,6 +139,9 @@ if __name__ == '__main__':
         N_train = sample_size_all[idx]
         print("Sample size: {}".format(N_train))
 
+        if (N_train >= N):
+            raise AssertionError("Sample size can't be larger than whole data")
+
         # Get the initial seed
         seed_init = seed_generator(sys_name, N_train)
 

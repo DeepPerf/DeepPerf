@@ -56,15 +56,15 @@ Alternatively, users can customize the sample size and/or the number of experime
 
 Setting none or one option will result in the other option(s) running with the default setting. The default setting for the number of experiments is 30. The default setting for the sample size is the 5 different sample sizes: n, 2n, 3n, 4n, 5n where n is the number of configuration options.
 
-NOTE: Time cost of tuning hyperparameter and train final neural network model for each experiment ranges from 2-20 minutes depends on the software systems, the sample size and the user's CPU. Therefore, please be aware that for each sample size, the time cost of evaluate 30 experiments ranges from 1 hour to 10 hours. 
+**NOTE**: Time cost of tuning hyperparameter and training the final neural network model for each experiment ranges from 2-20 minutes depends on the software systems, the sample size and the user's CPU. Therefore, please be aware that for each sample size, the time cost of evaluate 30 experiments ranges from 1 hour to 10 hours. 
 
 ## Experimental Results
 
 To evaluate the prediction accuracy, we use the mean relative error (MRE), which is computed as,
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=error_{rel}&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," target="_blank"><img src="https://latex.codecogs.com/gif.latex?error_{rel}&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," title="error_{rel} = \dfrac{1}{\vert C \vert} \sum_{c \in V} \dfrac{\vert predicted_c - actual_c \vert}{actual_c} \times 100," /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=MRE&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," target="_blank"><img src="https://latex.codecogs.com/gif.latex?MRE&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," title="MRE = \dfrac{1}{\vert C \vert} \sum_{c \in V} \dfrac{\vert predicted_c - actual_c \vert}{actual_c} \times 100," /></a>
 
-where V is the testing dataset, predicted_c is the predicted performance value of configuration c generated using the model, actual_c is the actual performance value of configuration c. In the two tables below, Mean is the mean of the MSEs seen in 30 experiments and Margin is the margin of the 95% confidence interval of the MSEs in the 30 experiments.
+where V is the testing dataset, predicted_c is the predicted performance value of configuration c generated using the model, actual_c is the actual performance value of configuration c. In the two tables below, Mean is the mean of the MREs seen in 30 experiments and Margin is the margin of the 95% confidence interval of the MREs in the 30 experiments.
 
 ### Prediction accuracy for software systems with binary options
 

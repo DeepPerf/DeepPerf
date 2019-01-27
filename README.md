@@ -1,6 +1,9 @@
 # DeepPerf
 
-Many software systems provide users with a set of configuration options and different configurations may lead to different runtime performance of the system. It is necessary to understand the performance of a system under a certain configuration, before the system is actually configured and deployed. This helps users make rational decisions in configurations and reduce performance testing cost. DeepPerf is an end-to-end deep learning based solution that can train a software performance prediction model from a limited number of samples and predict the performance value of software system under a new configuration. 
+Many software systems provide users with a set of configuration options and different configurations may lead to different runtime performance of the system. It is necessary to understand the performance of a system under a certain configuration, before the system is actually configured and deployed. This helps users make rational decisions in configurations and reduce performance testing cost. As the combination of configurations could be exponential, it is difficult to exhaustively deploy and measure system performance under all
+possible configurations. Recently, several learning methods have been proposed to build a performance prediction model based on
+performance data collected from a small sample of configurations, and then use the model to predict system performance with a
+new configuration. DeepPerf is an end-to-end deep learning based solution that can train a software performance prediction model from a limited number of samples and predict the performance value of software system under a new configuration. 
 
 ## Prerequisites
 

@@ -64,7 +64,7 @@ To evaluate the prediction accuracy, we use the mean relative error (MRE), which
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=MRE&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," target="_blank"><img src="https://latex.codecogs.com/gif.latex?MRE&space;=&space;\dfrac{1}{\vert&space;C&space;\vert}&space;\sum_{c&space;\in&space;V}&space;\dfrac{\vert&space;predicted_c&space;-&space;actual_c&space;\vert}{actual_c}&space;\times&space;100," title="MRE = \dfrac{1}{\vert C \vert} \sum_{c \in V} \dfrac{\vert predicted_c - actual_c \vert}{actual_c} \times 100," /></a>
 
-where V is the testing dataset, predicted_c is the predicted performance value of configuration c generated using the model, actual_c is the actual performance value of configuration c. In the two tables below, Mean is the mean of the MREs seen in 30 experiments and Margin is the margin of the 95% confidence interval of the MREs in the 30 experiments.
+where V is the testing dataset, predicted_c is the predicted performance value of configuration c generated using the model, actual_c is the actual performance value of configuration c. In the two tables below, Mean is the mean of the MREs seen in 30 experiments and Margin is the margin of the 95% confidence interval of the MREs in the 30 experiments. The results are obtained when evaluating DeepPerf on a Windows 7 computer with Intel Xeon CPU E5-1650 3.2GHz 16GB RAM.
 
 ### Prediction accuracy for software systems with binary options
 

@@ -58,7 +58,7 @@ Setting none or one option will result in the other option(s) running with the d
 
 ## Experimental Results
 
-1. Prediction accuracy for software systems with binary options
+### Prediction accuracy for software systems with binary options
 
 <table>
     <thead>
@@ -295,7 +295,7 @@ Setting none or one option will result in the other option(s) running with the d
     </tbody>
 </table>
    
-    
+### Prediction accuracy for software systems with binary-numeric options
 
 
     

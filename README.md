@@ -143,7 +143,6 @@ Setting none or one option will result in the other option(s) running with the d
             <td>0.87</td>
             <td>0.11</td>
         </tr>
-
     </tbody>
 </table>
    

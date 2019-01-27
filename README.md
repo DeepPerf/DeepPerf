@@ -56,6 +56,8 @@ Alternatively, users can customize the sample size and/or the number of experime
 
 Setting none or one option will result in the other option(s) running with the default setting. The default setting for the number of experiments is 30. The default setting for the sample size is the 5 different sample sizes: n, 2n, 3n, 4n, 5n where n is the number of configuration options.
 
+NOTE: Time cost of tuning hyperparameter and train final neural network model for each experiment ranges from 2-20 minutes depends on the software systems, the sample size and the user's CPU. Therefore, please be aware that for each sample size, the time cost of evaluate 30 experiments ranges from 1 hour to 10 hours. 
+
 ## Experimental Results
 
 ### Prediction accuracy for software systems with binary options
@@ -302,7 +304,7 @@ Setting none or one option will result in the other option(s) running with the d
         <tr>
             <th rowspan="2" >Subject System</th>
             <th rowspan="2" >Sample Size</th>
-            <th colspan="2" >DECART</th>
+            <th colspan="2" >SPLConqueror</th>
             <th colspan="3" >DeepPerf</th>
         </tr>
         <tr>
@@ -320,7 +322,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW RD</td>
             <td>20.1</td>
             <td>RD</td>
-            <td>15.73</td>
+            <td> <b>15.73</b> </td>
             <td>0.90</td>
         </tr>
         <tr>
@@ -328,7 +330,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>PW RD</td>
             <td>22.1</td>
             <td>RD</td>
-            <td>13.67</td>
+            <td> <b>13.67</b> </td>
             <td>0.82</td>
         </tr>
         <tr>
@@ -336,7 +338,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(49, 7)</td>
             <td>10.6</td>
             <td>RD</td>
-            <td>8.19</td>
+            <td> <b>8.19</b> </td>
             <td>0.34</td>
         </tr>
         <tr>
@@ -344,7 +346,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(125, 5)</td>
             <td>18.8</td>
             <td>RD</td>
-            <td>7.20</td>
+            <td> <b>7.20</b> </td>
             <td>0.17</td>
         </tr>
         <tr>
@@ -353,7 +355,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW RD</td>
             <td>14.2</td>
             <td>RD</td>
-            <td>9.39</td>
+            <td> <b>9.39</b> </td>
             <td>0.37</td>
         </tr>
         <tr>
@@ -361,7 +363,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(125, 5)</td>
             <td>13.8</td>
             <td>RD</td>
-            <td>6.38</td>
+            <td> <b>6.38</b> </td>
             <td>0.44</td>
         </tr>
         <tr>
@@ -369,7 +371,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(49, 7)</td>
             <td>13.9</td>
             <td>RD</td>
-            <td>5.06</td>
+            <td> <b>5.06</b> </td>
             <td>0.35</td>
         </tr>
         <tr>
@@ -377,14 +379,14 @@ Setting none or one option will result in the other option(s) running with the d
             <td>PW RD</td>
             <td>13.9</td>
             <td>RD</td>
-            <td>3.75</td>
+            <td> <b>3.75</b> </td>
             <td>0.26</td>
         </tr>
         <tr>
             <td rowspan=4>hsmgp</td>
             <td>77</td>
             <td>OW RD</td>
-            <td>4.5</td>
+            <td> <b>4.5</b> </td>
             <td>RD</td>
             <td>6.76</td>
             <td>0.87</td>
@@ -392,7 +394,7 @@ Setting none or one option will result in the other option(s) running with the d
         <tr>
             <td>173</td>
             <td>PW RD</td>
-            <td>2.8</td>
+            <td> <b>2.8</b> </td>
             <td>RD</td>
             <td>3.60</td>
             <td>0.2</td>
@@ -400,7 +402,7 @@ Setting none or one option will result in the other option(s) running with the d
         <tr>
             <td>384</td>
             <td>OW PBD(49, 7)</td>
-            <td>2.2</td>
+            <td> <b>2.2</b> </td>
             <td>RD</td>
             <td>2.53</td>
             <td>0.13</td>
@@ -408,7 +410,7 @@ Setting none or one option will result in the other option(s) running with the d
         <tr>
             <td>480</td>
             <td>OW PBD(125, 5)</td>
-            <td>1.7</td>
+            <td> <b>1.7</b> </td>
             <td>RD</td>
             <td>2.24</td>
             <td>0.11</td>
@@ -419,7 +421,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(49, 7)</td>
             <td>37.4</td>
             <td>RD</td>
-            <td>24.76</td>
+            <td> <b>24.76</b> </td>
             <td>2.42</td>
         </tr>
         <tr>
@@ -427,7 +429,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW RD</td>
             <td>31.3</td>
             <td>RD</td>
-            <td>23.27</td>
+            <td> <b>23.27</b> </td>
             <td>4.00</td>
         </tr>
         <tr>
@@ -435,7 +437,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(125, 5)</td>
             <td>21.9</td>
             <td>RD</td>
-            <td>21.83</td>
+            <td> <b>21.83</b> </td>
             <td>7.07</td>
         </tr>
         <tr>
@@ -443,7 +445,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(49, 7)</td>
             <td>28.2</td>
             <td>RD</td>
-            <td>17.32</td>
+            <td> <b>17.32</b> </td>
             <td>7.89</td>
         </tr>
         <tr>
@@ -452,7 +454,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW RD</td>
             <td>21.1</td>
             <td>RD</td>
-            <td>15.83</td>
+            <td> <b>15.83</b> </td>
             <td>1.25</td>
         </tr>
         <tr>
@@ -460,13 +462,13 @@ Setting none or one option will result in the other option(s) running with the d
             <td>OW PBD(125, 5)</td>
             <td>20.3</td>
             <td>RD</td>
-            <td>17.95</td>
+            <td> <b>17.95</b> </td>
             <td>5.63</td>
         </tr>
         <tr>
             <td>2499</td>
             <td>OW PBD(49, 7)</td>
-            <td>16</td>
+            <td> <b>16</b> </td>
             <td>RD</td>
             <td>17.13</td>
             <td>2.22</td>
@@ -476,7 +478,7 @@ Setting none or one option will result in the other option(s) running with the d
             <td>PW RD</td>
             <td>30.7</td>
             <td>RD</td>
-            <td>15.40</td>
+            <td> <b>15.40</b> </td>
             <td>2.05</td>
         </tr>
     </tbody>

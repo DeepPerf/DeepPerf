@@ -58,6 +58,8 @@ Setting none or one option will result in the other option(s) running with the d
 
 ## Experimental Results
 
+1. Prediction accuracy for software systems with binary options
+
 <table>
     <thead>
         <tr>
@@ -217,6 +219,78 @@ Setting none or one option will result in the other option(s) running with the d
             <td>0.33</td>
             <td>1.99</td>
             <td>0.15</td>
+        </tr>
+        <tr>
+            <td rowspan=5>BDBC</td>
+            <td>n</td>
+            <td>151.0</td>
+            <td>90.70</td>
+            <td>133.6</td>
+            <td>54.33</td>
+        </tr>
+        <tr>
+            <td>2n</td>
+            <td>43.8</td>
+            <td>26.72</td>
+            <td>16.77</td>
+            <td>2.25</td>
+        </tr>
+        <tr>
+            <td>3n</td>
+            <td>31.9</td>
+            <td>22.73</td>
+            <td>13.1</td>
+            <td>3.39</td>
+        </tr>
+        <tr>
+            <td>4n</td>
+            <td>6.93</td>
+            <td>1.39</td>
+            <td>6.95</td>
+            <td>1.11</td>
+        </tr>
+        <tr>
+            <td>5n</td>
+            <td>5.02</td>
+            <td>1.69</td>
+            <td>5.82</td>
+            <td>1.33</td>
+        </tr>
+        <tr>
+            <td rowspan=5>SQL</td>
+            <td>n</td>
+            <td>4.87</td>
+            <td>0.22</td>
+            <td>5.04</td>
+            <td>0.32</td>
+        </tr>
+        <tr>
+            <td>2n</td>
+            <td>4.67</td>
+            <td>0.17</td>
+            <td>4.63</td>
+            <td>0.13</td>
+        </tr>
+        <tr>
+            <td>3n</td>
+            <td>4.36</td>
+            <td>0.09</td>
+            <td>4.48</td>
+            <td>0.08</td>
+        </tr>
+        <tr>
+            <td>4n</td>
+            <td>4.21</td>
+            <td>0.1</td>
+            <td>4.40</td>
+            <td>0.14</td>
+        </tr>
+        <tr>
+            <td>5n</td>
+            <td>4.11</td>
+            <td>0.08</td>
+            <td>4.27</td>
+            <td>0.13</td>
         </tr>
     </tbody>
 </table>

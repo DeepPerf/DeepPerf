@@ -297,7 +297,124 @@ Setting none or one option will result in the other option(s) running with the d
    
 ### Prediction accuracy for software systems with binary-numeric options
 
-
+<table>
+    <thead>
+        <tr>
+            <th rowspan="2" >Subject System</th>
+            <th rowspan="2" >Sample Size</th>
+            <th colspan="2" >DECART</th>
+            <th colspan="3" >DeepPerf</th>
+        </tr>
+        <tr>
+            <th scope="col">Sampling Heuristic</th>
+            <th scope="col">Mean</th>
+            <th scope="col">Sampling Heuristic</th>
+            <th scope="col">Mean</th>
+            <th scope="col">Margin</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4>Dune</td>
+            <td>49</td>
+            <td>OW RD</td>
+            <td>20.1</td>
+            <td>RD</td>
+            <td>15.73</td>
+            <td>0.90</td>
+        </tr>
+        <tr>
+            <td>78</td>
+            <td>PW RD</td>
+            <td>22.1</td>
+            <td>RD</td>
+            <td>13.67</td>
+            <td>0.82</td>
+        </tr>
+        <tr>
+            <td>240</td>
+            <td>OW PBD(49, 7)</td>
+            <td>10.6</td>
+            <td>RD</td>
+            <td>8.19</td>
+            <td>0.34</td>
+        </tr>
+        <tr>
+            <td>375</td>
+            <td>OW PBD(125, 5)</td>
+            <td>18.8</td>
+            <td>RD</td>
+            <td>7.20</td>
+            <td>0.17</td>
+        </tr>
+        <tr>
+            <td rowspan=4>hipacc</td>
+            <td>261</td>
+            <td>OW RD</td>
+            <td>14.2</td>
+            <td>RD</td>
+            <td>9.39</td>
+            <td>0.37</td>
+        </tr>
+        <tr>
+            <td>528</td>
+            <td>OW PBD(125, 5)</td>
+            <td>13.8</td>
+            <td>RD</td>
+            <td>6.38</td>
+            <td>0.44</td>
+        </tr>
+        <tr>
+            <td>736</td>
+            <td>OW PBD(49, 7)</td>
+            <td>13.9</td>
+            <td>RD</td>
+            <td>5.06</td>
+            <td>0.35</td>
+        </tr>
+        <tr>
+            <td>1281</td>
+            <td>PW RD</td>
+            <td>13.9</td>
+            <td>RD</td>
+            <td>3.75</td>
+            <td>0.26</td>
+        </tr>
+        <tr>
+            <td rowspan=4>hsmgp</td>
+            <td>77</td>
+            <td>OW RD</td>
+            <td>4.5</td>
+            <td>RD</td>
+            <td>6.76</td>
+            <td>0.87</td>
+        </tr>
+        <tr>
+            <td>173</td>
+            <td>PW RD</td>
+            <td>2.8</td>
+            <td>RD</td>
+            <td>3.60</td>
+            <td>0.2</td>
+        </tr>
+        <tr>
+            <td>384</td>
+            <td>OW PBD(49, 7)</td>
+            <td>2.2</td>
+            <td>RD</td>
+            <td>2.53</td>
+            <td>0.13</td>
+        </tr>
+        <tr>
+            <td>480</td>
+            <td>OW PBD(125, 5)</td>
+            <td>1.7</td>
+            <td>RD</td>
+            <td>2.24</td>
+            <td>0.11</td>
+        </tr>
+    </tbody>
+</table>
     
 
 

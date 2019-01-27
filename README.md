@@ -413,6 +413,72 @@ Setting none or one option will result in the other option(s) running with the d
             <td>2.24</td>
             <td>0.11</td>
         </tr>
+        <tr>
+            <td rowspan=4>javagc</td>
+            <td>423</td>
+            <td>OW PBD(49, 7)</td>
+            <td>37.4</td>
+            <td>RD</td>
+            <td>24.76</td>
+            <td>2.42</td>
+        </tr>
+        <tr>
+            <td>534</td>
+            <td>OW RD</td>
+            <td>31.3</td>
+            <td>RD</td>
+            <td>23.27</td>
+            <td>4.00</td>
+        </tr>
+        <tr>
+            <td>855</td>
+            <td>OW PBD(125, 5)</td>
+            <td>21.9</td>
+            <td>RD</td>
+            <td>21.83</td>
+            <td>7.07</td>
+        </tr>
+        <tr>
+            <td>2571</td>
+            <td>OW PBD(49, 7)</td>
+            <td>28.2</td>
+            <td>RD</td>
+            <td>17.32</td>
+            <td>7.89</td>
+        </tr>
+        <tr>
+            <td rowspan=4>sac</td>
+            <td>2060</td>
+            <td>OW RD</td>
+            <td>21.1</td>
+            <td>RD</td>
+            <td>15.83</td>
+            <td>1.25</td>
+        </tr>
+        <tr>
+            <td>2295</td>
+            <td>OW PBD(125, 5)</td>
+            <td>20.3</td>
+            <td>RD</td>
+            <td>17.95</td>
+            <td>5.63</td>
+        </tr>
+        <tr>
+            <td>2499</td>
+            <td>OW PBD(49, 7)</td>
+            <td>16</td>
+            <td>RD</td>
+            <td>17.13</td>
+            <td>2.22</td>
+        </tr>
+        <tr>
+            <td>3261</td>
+            <td>PW RD</td>
+            <td>30.7</td>
+            <td>RD</td>
+            <td>15.40</td>
+            <td>2.05</td>
+        </tr>
     </tbody>
 </table>
     

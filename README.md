@@ -88,28 +88,28 @@ Setting none or one option will result in the other option(s) running with the d
             <td>2n</td>
             <td>15.83</td>
             <td>2.89</td>
-            <td>10.24</td>
+            <td> <b> 10.24 </b> </td>
             <td>1.15</td>
         </tr>
         <tr>
             <td>3n</td>
             <td>11.03</td>
             <td>1.46</td>
-            <td>8.25</td>
+            <td> <b>8.25</b> </td>
             <td>0.75</td>
         </tr>
         <tr>
             <td>4n</td>
             <td>9.49</td>
             <td>1.00</td>
-            <td>6.97</td>
+            <td> <b>6.97</b> </td>
             <td>0.39</td>
         </tr>
         <tr>
             <td>5n</td>
             <td>7.84</td>
             <td>0.28</td>
-            <td>6.29</td>
+            <td> <b>6.29</b> </td>
             <td>0.44</td>
         </tr>
         <tr>
@@ -117,35 +117,35 @@ Setting none or one option will result in the other option(s) running with the d
             <td>n</td>
             <td>17.71</td>
             <td>3.87</td>
-            <td>10.43</td>
+            <td> <b>10.43</b> </td>
             <td>2.28</td>
         </tr>
         <tr>
             <td>2n</td>
             <td>9.31</td>
             <td>1.30</td>
-            <td>3.61</td>
+            <td> <b>3.61</b> </td>
             <td>0.54</td>
         </tr>
         <tr>
             <td>3n</td>
             <td>6.37</td>
             <td>0.83</td>
-            <td>2.13</td>
-            <td>0.31</td>
+            <td> <b>2.13</b> </td>
+            <td> 0.31</td>
         </tr>
         <tr>
             <td>4n</td>
             <td>4.26</td>
             <td>0.47</td>
-            <td>1.49</td>
+            <td> <b>1.49</b> </td>
             <td>0.38</td>
         </tr>
         <tr>
             <td>5n</td>
             <td>2.94</td>
             <td>0.52</td>
-            <td>0.87</td>
+            <td> <b>0.87</b> </td>
             <td>0.11</td>
         </tr>
         <tr>
@@ -153,35 +153,35 @@ Setting none or one option will result in the other option(s) running with the d
             <td>n</td>
             <td>10.04</td>
             <td>4.67</td>
-            <td>7.25</td>
+            <td> <b>7.25</b> </td>
             <td>4.21</td>
         </tr>
         <tr>
             <td>2n</td>
             <td>2.23</td>
             <td>0.16</td>
-            <td>2.07</td>
+            <td> <b>2.07</b> </td>
             <td>0.32</td>
         </tr>
         <tr>
             <td>3n</td>
             <td>2.03</td>
             <td>0.16</td>
-            <td>1.73</td>
+            <td> <b>1.73</b> </td>
             <td>0.12</td>
         </tr>
         <tr>
             <td>4n</td>
             <td>1.72</td>
             <td>0.09</td>
-            <td>1.67</td>
+            <td> <b>1.67</b> </td>
             <td>0.12</td>
         </tr>
         <tr>
             <td>5n</td>
             <td>1.67</td>
             <td>0.09</td>
-            <td>1.61</td>
+            <td> <b>1.61</b> </td>
             <td>0.09</td>
         </tr>
         <tr>
@@ -189,35 +189,35 @@ Setting none or one option will result in the other option(s) running with the d
             <td>n</td>
             <td>6.00</td>
             <td>0.34</td>
-            <td>5.09</td>
+            <td> <b>5.09</b> </td>
             <td>0.80</td>
         </tr>
         <tr>
             <td>2n</td>
             <td>4.66</td>
             <td>0.47</td>
-            <td>3.87</td>
+            <td> <b>3.87</b> </td>
             <td>0.48</td>
         </tr>
         <tr>
             <td>3n</td>
             <td>3.96</td>
             <td>0.39</td>
-            <td>2.54</td>
+            <td> <b>2.54</b> </td>
             <td>0.15</td>
         </tr>
         <tr>
             <td>4n</td>
             <td>3.54</td>
             <td>0.42</td>
-            <td>2.27</td>
+            <td> <b>2.27</b> </td>
             <td>0.16</td>
         </tr>
         <tr>
             <td>5n</td>
             <td>2.84</td>
             <td>0.33</td>
-            <td>1.99</td>
+            <td> <b>1.99</b> </td>
             <td>0.15</td>
         </tr>
         <tr>
@@ -225,33 +225,33 @@ Setting none or one option will result in the other option(s) running with the d
             <td>n</td>
             <td>151.0</td>
             <td>90.70</td>
-            <td>133.6</td>
+            <td> <b>133.6</b> </td>
             <td>54.33</td>
         </tr>
         <tr>
             <td>2n</td>
             <td>43.8</td>
             <td>26.72</td>
-            <td>16.77</td>
+            <td> <b>16.77</b> </td>
             <td>2.25</td>
         </tr>
         <tr>
             <td>3n</td>
             <td>31.9</td>
             <td>22.73</td>
-            <td>13.1</td>
+            <td> <b>13.1</b> </td>
             <td>3.39</td>
         </tr>
         <tr>
             <td>4n</td>
-            <td>6.93</td>
+            <td> <b>6.93</b> </td>
             <td>1.39</td>
             <td>6.95</td>
             <td>1.11</td>
         </tr>
         <tr>
             <td>5n</td>
-            <td>5.02</td>
+            <td> <b>5.02</b> </td>
             <td>1.69</td>
             <td>5.82</td>
             <td>1.33</td>
@@ -259,7 +259,7 @@ Setting none or one option will result in the other option(s) running with the d
         <tr>
             <td rowspan=5>SQL</td>
             <td>n</td>
-            <td>4.87</td>
+            <td> <b>4.87</b> </td>
             <td>0.22</td>
             <td>5.04</td>
             <td>0.32</td>
@@ -268,26 +268,26 @@ Setting none or one option will result in the other option(s) running with the d
             <td>2n</td>
             <td>4.67</td>
             <td>0.17</td>
-            <td>4.63</td>
+            <td> <b>4.63</b> </td>
             <td>0.13</td>
         </tr>
         <tr>
             <td>3n</td>
-            <td>4.36</td>
+            <td> <b>4.36</b> </td>
             <td>0.09</td>
             <td>4.48</td>
             <td>0.08</td>
         </tr>
         <tr>
             <td>4n</td>
-            <td>4.21</td>
+            <td> <b>4.21</b> </td>
             <td>0.1</td>
             <td>4.40</td>
             <td>0.14</td>
         </tr>
         <tr>
             <td>5n</td>
-            <td>4.11</td>
+            <td> <b>4.11</b> </td>
             <td>0.08</td>
             <td>4.27</td>
             <td>0.13</td>

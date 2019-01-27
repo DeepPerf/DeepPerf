@@ -52,7 +52,7 @@ When finishing each sample size, the script will output a .csv file that shows t
 
 Alternatively, users can customize the sample size and/or the number of experiments for each sample size by using the optional arguments ```-ss``` and ```-ne```. For example, to set the sample size = 20 and the number of experiments = 10, the corresponding command line is:
 
-```$ python AutoDeepPerf.py LLVM -ss 20 --ne 10```
+```$ python AutoDeepPerf.py LLVM -ss 20 -ne 10```
 
 Setting none or one option will result in the other option(s) running with the default setting. The default setting for the number of experiments is 30. The default setting for the sample size is the 5 different sample sizes: n, 2n, 3n, 4n, 5n where n is the number of configuration options.
 

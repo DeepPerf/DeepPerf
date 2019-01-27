@@ -44,15 +44,15 @@ Six of these systems have only binary configuration options, the other five syst
 
 ## Usage
 
-To run DeepPerf, users need to specify the name of the software system they wish to evaluate and then run the script `AutoDeepPerf.py`. The script will then evaluate DeepPerf on the chosen software system with 5 different sample sizes (n, 2n, 3n, 4n, 5n with n being the number of options) and 30 experiments for each sample size. For example, if users want to evaluate the system LLVM, the command line to run DeepPerf will be:
+To run DeepPerf, users need to specify the name of the software system they wish to evaluate and then run the script `AutoDeepPerf.py`. The script will then evaluate DeepPerf on the chosen software system with 5 different sample sizes (n, 2n, 3n, 4n, 5n with n being the number of options) and 30 experiments for each sample size. For example, if users want to evaluate the system LLVM, the command line to run DeepPerf will be: 
 
-    ```$ python AutoDeepPerf.py LLVM```
+```$ python AutoDeepPerf.py LLVM```
 
 When finishing each sample size, the script will output a .csv file that shows the mean prediction error and the margin (95% confidence interval) of that sample size over the 30 experiments. There are 11 software systems that users can evaluate: Apache, LLVM, x264, BDBC, BDBJ, SQL, Dune, hipacc, hsmgp, javagc, sac. 
 
 Alternatively, users can customize the sample size and/or the number of experiments for each sample size by using the optional arguments ```-ss``` and ```-ne```. For example, to set the sample size = 20 and the number of experiments = 10, the corresponding command line is:
 
-    ```$ python AutoDeepPerf.py LLVM -ss 20 --ne 10```
+```$ python AutoDeepPerf.py LLVM -ss 20 --ne 10```
 
 Setting none or one option will result in the other option(s) running with the default setting. The default setting for the number of experiments is 30. The default setting for the sample size is the 5 different sample sizes: n, 2n, 3n, 4n, 5n where n is the number of configuration options.
 
@@ -145,6 +145,78 @@ Setting none or one option will result in the other option(s) running with the d
             <td>0.52</td>
             <td>0.87</td>
             <td>0.11</td>
+        </tr>
+        <tr>
+            <td rowspan=5>BDBJ</td>
+            <td>n</td>
+            <td>10.04</td>
+            <td>4.67</td>
+            <td>7.25</td>
+            <td>4.21</td>
+        </tr>
+        <tr>
+            <td>2n</td>
+            <td>2.23</td>
+            <td>0.16</td>
+            <td>2.07</td>
+            <td>0.32</td>
+        </tr>
+        <tr>
+            <td>3n</td>
+            <td>2.03</td>
+            <td>0.16</td>
+            <td>1.73</td>
+            <td>0.12</td>
+        </tr>
+        <tr>
+            <td>4n</td>
+            <td>1.72</td>
+            <td>0.09</td>
+            <td>1.67</td>
+            <td>0.12</td>
+        </tr>
+        <tr>
+            <td>5n</td>
+            <td>1.67</td>
+            <td>0.09</td>
+            <td>1.61</td>
+            <td>0.09</td>
+        </tr>
+        <tr>
+            <td rowspan=5>LLVM</td>
+            <td>n</td>
+            <td>6.00</td>
+            <td>0.34</td>
+            <td>5.09</td>
+            <td>0.80</td>
+        </tr>
+        <tr>
+            <td>2n</td>
+            <td>4.66</td>
+            <td>0.47</td>
+            <td>3.87</td>
+            <td>0.48</td>
+        </tr>
+        <tr>
+            <td>3n</td>
+            <td>3.96</td>
+            <td>0.39</td>
+            <td>2.54</td>
+            <td>0.15</td>
+        </tr>
+        <tr>
+            <td>4n</td>
+            <td>3.54</td>
+            <td>0.42</td>
+            <td>2.27</td>
+            <td>0.16</td>
+        </tr>
+        <tr>
+            <td>5n</td>
+            <td>2.84</td>
+            <td>0.33</td>
+            <td>1.99</td>
+            <td>0.15</td>
         </tr>
     </tbody>
 </table>

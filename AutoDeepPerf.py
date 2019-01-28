@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from numpy import genfromtxt
 from mlp_sparse_model import MLPSparseModel
 from mlp_plain_model import MLPPlainModel
@@ -55,15 +55,15 @@ def system_samplesize(sys_name):
     elif (sys_name == 'x264'):
         N_train_all = np.multiply(16, [1, 2, 3, 4, 5])  # This is for X264
     elif (sys_name == 'Dune'):
-        N_train_all = [49, 78, 240, 375]  # This is for Dune
+        N_train_all = np.asarray([49, 78, 240, 375])  # This is for Dune
     elif (sys_name == 'hipacc'):
-        N_train_all = [261, 736, 528, 1281]  # This is for hipacc
+        N_train_all = np.asarray([261, 736, 528, 1281])  # This is for hipacc
     elif (sys_name == 'hsmgp'):
-        N_train_all = [77, 173, 384, 480]  # This is for hsmgp
+        N_train_all = np.asarray([77, 173, 384, 480])  # This is for hsmgp
     elif (sys_name == 'javagc'):
-        N_train_all = [423, 534, 855, 2571]  # This is for javagc
+        N_train_all = np.asarray([423, 534, 855, 2571])  # This is for javagc
     elif (sys_name == 'sac'):
-        N_train_all = [2060, 2295, 2499, 3261]  # This is for sac
+        N_train_all = np.asarray([2060, 2295, 2499, 3261])  # This is for sac
     else:
         raise AssertionError("Unexpected value of 'sys_name'!")
 
@@ -161,7 +161,7 @@ if __name__ == '__main__':
             start = time.time()
 
             # Set seed and generate training data
-            seed = seed_init + m
+            seed = seed_init*n_exp + m
             np.random.seed(seed)
             permutation = np.random.permutation(N)
             training_index = permutation[0:N_train]
@@ -272,7 +272,7 @@ if __name__ == '__main__':
 
             lr_opt = lr_best
             print('The optimal number of layers: {}'.format(n_layer_opt))
-            print('The optimal learning rate: {:.2f}'.format(lr_opt))
+            print('The optimal learning rate: {:.4f}'.format(lr_opt))
 
             # Use grid search to find the right value of lambda
             lambda_range = np.logspace(-2, np.log10(1000), 30)
@@ -289,7 +289,7 @@ if __name__ == '__main__':
             # Find the value of lambda that minimize error_min
             lambda_f = lambda_range[np.argmin(error_min)]
             print('Step 2: Tuning the l1 regularized hyperparameter ...')
-            print('The optimal l1 regularizer: {:.2f}'.format(lambda_f))
+            print('The optimal l1 regularizer: {:.4f}'.format(lambda_f))
 
             # Store some useful results
             n_layer_all.append(n_layer_opt)
@@ -367,7 +367,8 @@ if __name__ == '__main__':
         print('Save results to the current directory ...')
 
         filename = 'result_' + sys_name + '.csv'
-        np.savetxt(filename, result_arr, fmt="%f", delimiter=",")
+        np.savetxt(filename, result_arr, fmt="%f", delimiter=",",
+                   header="Sample size, Mean, Margin")
         print('Save the statistics to file ' + filename + ' ...')
 
         filename = 'result_' + sys_name + '_AutoML_veryrandom.npy'

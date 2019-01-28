@@ -20,7 +20,7 @@ DeepPerf can be directly executed through source code
 
 2. Install Tensorflow
 
-    ```$ pip3 install tensorflow==1.10.0```
+    ```$ pip install tensorflow==1.10.0```
 
 3. Clone DeepPerf
 

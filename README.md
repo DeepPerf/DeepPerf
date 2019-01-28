@@ -3,7 +3,9 @@
 Many software systems provide users with a set of configuration options and different configurations may lead to different runtime performance of the system. It is necessary to understand the performance of a system under a certain configuration, before the system is actually configured and deployed. This helps users make rational decisions in configurations and reduce performance testing cost. As the combination of configurations could be exponential, it is difficult to exhaustively deploy and measure system performance under all
 possible configurations. Recently, several learning methods have been proposed to build a performance prediction model based on
 performance data collected from a small sample of configurations, and then use the model to predict system performance with a
-new configuration. DeepPerf is an end-to-end deep learning based solution that can train a software performance prediction model from a limited number of samples and predict the performance value of software system under a new configuration. 
+new configuration. DeepPerf is an end-to-end deep learning based solution that can train a software performance prediction model from a limited number of samples and predict the performance value of software system under a new configuration. DeepPerf consists of two main stages:
+- Stage 1: Tune the hyperparameters of the neural network
+- Stage 2: Utilize the hyperparameters in Stage 1 to train the neural network with the samples and predict the performance value of software system under a new configuration.
 
 ## Prerequisites
 
@@ -44,19 +46,19 @@ Six of these systems have only binary configuration options, the other five syst
 
 ## Usage
 
-To run DeepPerf, users need to specify the name of the software system they wish to evaluate and then run the script `AutoDeepPerf.py`. The script will then evaluate DeepPerf on the chosen software system with 5 different sample sizes (n, 2n, 3n, 4n, 5n with n being the number of options) and 30 experiments for each sample size. For example, if users want to evaluate the system LLVM, the command line to run DeepPerf will be: 
+To run DeepPerf, users need to specify the name of the software system they wish to evaluate and then run the script `AutoDeepPerf.py`. There are 11 software systems that users can evaluate: Apache, LLVM, x264, BDBC, BDBJ, SQL, Dune, hipacc, hsmgp, javagc, sac. The script will then evaluate DeepPerf on the chosen software system with the same experiment setup presented in our paper. Specifically, for binary software systems, DeepPerf will run with five different sample sizes: n, 2n, 3n, 4n, 5n with n being the number of options, and 30 experiments for each sample size. For binary-numeric software systems, DeepPerf will run with the sample sizes specified in Table IV of our paper, and 30 experiments for each sample size. For example, if users want to evaluate DeepPerf with the system LLVM, the command line to run DeepPerf will be: 
 
 ```$ python AutoDeepPerf.py LLVM```
 
-When finishing each sample size, the script will output a .csv file that shows the mean prediction error and the margin (95% confidence interval) of that sample size over the 30 experiments. There are 11 software systems that users can evaluate: Apache, LLVM, x264, BDBC, BDBJ, SQL, Dune, hipacc, hsmgp, javagc, sac. 
+When finishing each sample size, the script will output a .csv file that shows the mean prediction error and the margin (95% confidence interval) of that sample size over the 30 experiments. These results will be same/similar as the results we report in Table III and IV of our paper.
 
 Alternatively, users can customize the sample size and/or the number of experiments for each sample size by using the optional arguments ```-ss``` and ```-ne```. For example, to set the sample size = 20 and the number of experiments = 10, the corresponding command line is:
 
 ```$ python AutoDeepPerf.py LLVM -ss 20 -ne 10```
 
-Setting none or one option will result in the other option(s) running with the default setting. The default setting for the number of experiments is 30. The default setting for the sample size is the 5 different sample sizes: n, 2n, 3n, 4n, 5n where n is the number of configuration options.
+Setting none or one option will result in the other option(s) running with the default setting. The default setting of the number of experiments is 30. The default setting of the sample size is: (a) the five different sample sizes: n, 2n, 3n, 4n, 5n, with n being the number of configuration options, when the evaluated system is a binary system OR (b) the four sample sizes specified in Table IV of our paper when the evaluated system is a binary-numeric system.
 
-**NOTE**: Time cost of tuning hyperparameter and training the final neural network model for each experiment ranges from 2-20 minutes depends on the software systems, the sample size and the user's CPU. Therefore, please be aware that for each sample size, the time cost of evaluate 30 experiments ranges from 1 hour to 10 hours. 
+**NOTE**: The time cost of tuning hyperparameters and training the final neural network for each experiment ranges from 2-20 minutes depends on the software system, the sample size and the user's CPU. Typically, the time cost will be smaller when the software systems has smaller number of configurations or when the sample size is small. Therefore, please be aware that for each sample size, the time cost of evaluating 30 experiments ranges from 1 hour to 10 hours. 
 
 ## Experimental Results
 

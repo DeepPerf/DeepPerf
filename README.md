@@ -6,7 +6,7 @@ Many software systems provide users with a set of configuration options and diff
 
 ## Citing DeepPerf
 
-If you find our code useful, please kindly cite our paper:
+If you find our code useful, please cite our paper:
 ```
 @inproceedings{Ha2019DeepPerf,
   author    = {Huong Ha and
